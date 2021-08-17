@@ -6,3 +6,4 @@ WHERE end_date IS NULL
 GROUP BY students.name
 HAVING AVG(assignment_submissions.duration) < AVG(assignments.duration)
 ORDER BY average_assignment_duration ASC;
+
